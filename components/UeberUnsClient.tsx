@@ -141,7 +141,7 @@ export const UeberUnsClient = () => {
                 style={{ clipPath: 'polygon(12% 0, 100% 0, 100% 100%, 0% 100%)' }}
               >
                 <Image
-                  src="/images/hero/Header.webp"
+                  src="/images/hero/header.webp"
                   alt="Simba Facility Management Team"
                   fill
                   className="object-cover object-[center_8%]"
@@ -154,7 +154,7 @@ export const UeberUnsClient = () => {
             {/* Mobile/Tablet Image Layout fallback beneath buttons (lg:hidden) */}
             <div className="lg:hidden relative w-full aspect-[800/1200] max-h-[480px] sm:max-h-[550px] mx-auto rounded-none overflow-hidden border border-slate-100/60 shadow-sm mt-6">
               <Image
-                src="/images/hero/Header.webp"
+                src="/images/hero/header.webp"
                 alt="Simba Facility Management Team"
                 fill
                 className="object-cover object-[center_8%]"
@@ -204,7 +204,7 @@ export const UeberUnsClient = () => {
             {/* Right Column: Image aligning perfectly with the text height */}
             <div className="lg:col-span-5 relative w-full min-h-[300px] sm:min-h-[400px] lg:h-auto rounded-[30px] overflow-hidden border border-slate-200/50 shadow-[0_15px_50px_rgba(0,0,0,0.02)] bg-white">
               <Image 
-                src="/images/ueber-uns/Jasmina_Marinkovic_Kosmo.webp" 
+                src="/images/ueber-uns/jasmina_marinkovic_kosmo.webp" 
                 alt="Jasmina Marinkovic" 
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
@@ -316,7 +316,7 @@ export const UeberUnsClient = () => {
             {/* Right Image Column aligning perfectly with the text height */}
             <div className="lg:col-span-5 relative w-full min-h-[300px] sm:min-h-[400px] lg:h-auto rounded-[30px] overflow-hidden border border-slate-200/50 shadow-[0_15px_50px_rgba(0,0,0,0.02)] bg-white">
               <Image 
-                src="/images/ueber-uns/Team.webp" 
+                src="/images/ueber-uns/team.webp" 
                 alt="Unser qualifiziertes Simba Team" 
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
