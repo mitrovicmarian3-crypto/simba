@@ -172,7 +172,7 @@ export const HomeClient = () => {
                 style={{ clipPath: 'polygon(12% 0, 100% 0, 100% 100%, 0% 100%)' }}
               >
                 <Image
-                  src="/images/hero/Header.webp"
+                  src="/images/hero/header.webp"
                   alt="Simba Facility Management Team"
                   fill
                   className="object-cover object-[center_8%]"
@@ -203,10 +203,10 @@ export const HomeClient = () => {
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 items-center justify-items-center">
                 {[
-                  { name: "Berger Parkinnen", src: "/images/partners/Berger.webp" },
-                  { name: "GoodMills", src: "/images/partners/GoodMills.webp" },
-                  { name: "EPOFilm", src: "/images/partners/EPO.webp" },
-                  { name: "Steininger", src: "/images/partners/Steininger.webp" },
+                  { name: "Berger Parkinnen", src: "/images/partners/berger.webp" },
+                  { name: "GoodMills", src: "/images/partners/goodmills.webp" },
+                  { name: "EPOFilm", src: "/images/partners/epo.webp" },
+                  { name: "Steininger", src: "/images/partners/steininger.webp" },
                 ].map((partner, idx) => (
                   <div 
                     key={idx} 
@@ -302,7 +302,7 @@ export const HomeClient = () => {
             <div className="md:col-span-4 relative h-[380px] md:h-[450px] lg:h-[480px] w-full rounded-none overflow-hidden shadow-sm border border-slate-100 flex items-center justify-center bg-white p-2">
               <div className="relative w-full h-full">
                 <Image 
-                  src="/images/ueber-uns/Jasmina_Marinkovic_Kosmo.webp" 
+                  src="/images/ueber-uns/jasmina_marinkovic_kosmo.webp" 
                   alt="Jasmina Marinkovic - Geschäftsführerin Simba Facility Management" 
                   fill
                   sizes="(max-width: 1024px) 100vw, 400px"
