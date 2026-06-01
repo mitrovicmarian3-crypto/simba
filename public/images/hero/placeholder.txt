@@ -1,0 +1,1 @@
+Folder for hero/header images. Place your png file here.

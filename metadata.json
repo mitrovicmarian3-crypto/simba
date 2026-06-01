@@ -1,0 +1,6 @@
+{
+  "name": "Simba Facility Management - Unterhaltsreinigung Wien",
+  "description": "Meisterbetrieb für professionelle Unterhaltsreinigung, Gebäudereinigung und Sonderreinigung in Wien. Zuverlässig, gründlich und nachhaltig.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
