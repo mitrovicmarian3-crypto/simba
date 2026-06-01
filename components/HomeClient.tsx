@@ -152,7 +152,7 @@ export const HomeClient = () => {
               {/* Mobile team image - visible only on mobile/tablet screens (aligned to exact 800x1200 aspect ratio) */}
               <div className="relative w-full aspect-[800/1200] max-h-[480px] sm:max-h-[550px] mx-auto rounded-2xl overflow-hidden shadow-md mt-10 block lg:hidden">
                 <Image 
-                  src="/images/hero/Header.webp" 
+                  src="/images/hero/header.webp" 
                   alt="Simba Facility Management - Professionelle Gebäudereinigung Wien" 
                   fill
                   className="object-cover object-[center_8%]"
