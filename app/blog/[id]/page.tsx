@@ -448,7 +448,7 @@ export default function ArticlePage({ params, searchParams }: PageProps) {
                 <div className="flex items-center gap-4 mb-4 border-b border-slate-100 pb-4">
                   <div className="relative w-14 h-14 bg-slate-50 shrink-0 border border-slate-100 rounded-full overflow-hidden">
                     <Image 
-                      src="/images/ueber-uns/Jasmina_Marinkovic_Kosmo.webp" 
+                      src="/images/ueber-uns/jasmina_marinkovic_kosmo.webp" 
                       alt="Jasmina Marinkovic - Simba Facility Wien" 
                       fill
                       className="object-cover"
