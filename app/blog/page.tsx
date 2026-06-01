@@ -186,7 +186,7 @@ function BlogPageContent() {
             <div className="lg:col-span-5 w-full">
               <div className="relative w-full aspect-[4/3] md:aspect-[16/11] bg-slate-50 border border-slate-150">
                 <Image
-                  src="/images/ueber-uns/Team.webp"
+                  src="/images/ueber-uns/team.webp"
                   alt="Simba Facility Management Team - Meisterbetrieb Wien"
                   fill
                   className="object-cover object-center"
