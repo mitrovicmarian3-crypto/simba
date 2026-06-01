@@ -16,7 +16,7 @@ export default function TestPage() {
         </div>
         <div>
           <p>Standard img tag (Hero):</p>
-          <img src="/images/hero/Header.webp" alt="Hero Header" className="w-96" />
+          <img src="/images/hero/header.webp" alt="Hero Header" className="w-96" />
         </div>
       </div>
     </div>
