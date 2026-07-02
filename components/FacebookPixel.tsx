@@ -8,8 +8,15 @@ export default function FacebookPixel() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    // Hier Ihre Facebook Pixel ID eintragen
-    const FB_PIXEL_ID = '966605765955748'; 
+    const consent = localStorage.getItem('cookie-consent');
+
+    if (!consent) return;
+
+    const settings = JSON.parse(consent);
+
+    if (!settings.marketing) return;
+
+    const FB_PIXEL_ID = '966605765955748';
 
     import('react-facebook-pixel')
       .then((x) => x.default)
