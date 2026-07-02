@@ -26,10 +26,14 @@ export const CookieConsent = () => {
   }, []);
 
   const handleSave = (selectedPrefs: typeof preferences) => {
-    localStorage.setItem('cookie-consent', JSON.stringify(selectedPrefs));
-    localStorage.setItem('cookie-consent-date', new Date().toISOString());
-    setIsVisible(false);
-  };
+  localStorage.setItem('cookie-consent', JSON.stringify(selectedPrefs));
+  localStorage.setItem('cookie-consent-date', new Date().toISOString());
+
+  // Alle Komponenten informieren, dass sich der Consent geändert hat
+  window.dispatchEvent(new Event("cookie-consent-updated"));
+
+  setIsVisible(false);
+};
 
   const handleAcceptAll = () => {
     const allAccepted = {
