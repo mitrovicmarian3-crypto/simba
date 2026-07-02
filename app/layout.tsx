@@ -5,6 +5,7 @@ import { constructMetadata } from "@/lib/metadata";
 import { Layout } from "@/components/Layout";
 import SchemaOrg from "@/components/SchemaOrg";
 import FacebookPixel from "@/components/FacebookPixel";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Suspense } from "react";
 
 const sans = Inter({
@@ -41,6 +42,9 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <FacebookPixel />
         </Suspense>
+         <Suspense fallback={null}>
+    <GoogleAnalytics />
+  </Suspense>
         <Layout>{children}</Layout>
       </body>
     </html>
