@@ -1,34 +1,47 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Script from 'next/script';
 
+const GA_ID = 'G-HL1B0KBPZ2';
+
 export default function GoogleAnalytics() {
+  const [enabled, setEnabled] = useState(false);
+
   useEffect(() => {
-    const consent = localStorage.getItem('cookie-consent');
+    const checkConsent = () => {
+      const consent = localStorage.getItem('cookie-consent');
 
-    if (!consent) return;
+      if (!consent) {
+        setEnabled(false);
+        return;
+      }
 
-    const settings = JSON.parse(consent);
+      try {
+        const settings = JSON.parse(consent);
+        setEnabled(!!settings.statistics);
+      } catch {
+        setEnabled(false);
+      }
+    };
 
-    if (!settings.statistics) return;
+    // Beim ersten Laden prüfen
+    checkConsent();
+
+    // Reagiert sofort auf Änderungen des Cookie-Banners
+    window.addEventListener('cookie-consent-updated', checkConsent);
+
+    return () => {
+      window.removeEventListener('cookie-consent-updated', checkConsent);
+    };
   }, []);
 
-  const consent =
-    typeof window !== 'undefined'
-      ? localStorage.getItem('cookie-consent')
-      : null;
-
-  if (!consent) return null;
-
-  const settings = JSON.parse(consent);
-
-  if (!settings.statistics) return null;
+  if (!enabled) return null;
 
   return (
     <>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-HL1B0KBPZ2"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
         strategy="afterInteractive"
       />
 
@@ -36,9 +49,12 @@ export default function GoogleAnalytics() {
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+          window.gtag = gtag;
 
-          gtag('config', 'G-HL1B0KBPZ2');
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}', {
+            anonymize_ip: true
+          });
         `}
       </Script>
     </>
