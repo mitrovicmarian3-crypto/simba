@@ -5,9 +5,9 @@ export default function SchemaOrg() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Simba Facility Management",
-    "image": "https://simba-fm.at/images/logos/logo.png",
-    "@id": "https://simba-fm.at",
-    "url": "https://simba-fm.at",
+    "image": "https://simbafm.at/images/logos/logo.png",
+    "@id": "https://simbafm.at",
+    "url": "https://simbafm.at",
     "telephone": "+436601470316",
     "address": {
       "@type": "PostalAddress",
