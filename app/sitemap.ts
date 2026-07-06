@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { SERVICES_DATA } from '../constants/services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.APP_URL || 'https://www.simbafm.at';
+  const baseUrl = process.env.APP_URL || 'https://simbafm.at';
   
   const routes = [
     '',
