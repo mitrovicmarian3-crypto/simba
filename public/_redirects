@@ -1,0 +1,5 @@
+# Redirect www to non-www (canonical)
+https://www.simbafm.at/* https://simbafm.at/:splat 301!
+
+# Fallback for Netlify
+/* /index.html 200
