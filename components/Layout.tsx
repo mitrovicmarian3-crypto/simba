@@ -126,29 +126,29 @@ const Navigation = React.memo(() => {
             )
           ))}
         </nav>
-
         {/* Actions Section */}
-        <div className="actions flex items-center gap-3.5 xl:gap-5 shrink-0">
-          {/* Opening Hours left of Tel No */}
-          <div className="hidden sm:flex flex-col items-end text-[10px] xl:text-[11px] leading-tight text-slate-500 font-bold shrink-0">
-            <div className="flex items-center gap-1.5 text-primary">
-              <Clock size={11} className="stroke-[2.5]" />
-              <span>Mo-Fr 08-18</span>
-            </div>
-            <span className="text-slate-400">Sa 08-12</span>
-          </div>
+<div className="actions flex items-center gap-3.5 xl:gap-5 shrink-0">
 
-          <a 
-            href="tel:06601470316" 
-            className="btn-header bg-primary hover:bg-[#003566] text-white px-4 md:px-5.5 py-2 md:py-2.5 rounded-full font-bold text-[0.75rem] md:text-[0.82rem] flex items-center gap-2 shadow-lg shadow-primary/10 hover:shadow-primary/25 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 shrink-0 whitespace-nowrap border border-primary/10"
-          >
-            <Phone size={13} className="fill-white/20" /> 
-            <span>+43 660 147 03 16</span>
-          </a>
-        </div>
-      </header>
-    </div>
-  );
+  {/* Opening Hours left of Tel No */}
+  <div className="hidden sm:flex items-center gap-2 px-3 py-2 rounded-full border border-slate-200 bg-slate-50/70 text-[10px] xl:text-[11px] leading-none font-bold shrink-0 whitespace-nowrap">
+    <Clock size={12} className="stroke-[2.5] text-primary shrink-0" />
+    <span className="text-primary">Mo-Fr: 08-18</span>
+    <span className="text-slate-300">•</span>
+    <span className="text-slate-500">Sa: 08-12</span>
+  </div>
+
+  <a 
+    href="tel:06601470316" 
+    className="btn-header bg-primary hover:bg-[#003566] text-white px-4 md:px-5.5 py-2 md:py-2.5 rounded-full font-bold text-[0.75rem] md:text-[0.82rem] flex items-center gap-2 shadow-lg shadow-primary/10 hover:shadow-primary/25 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 shrink-0 whitespace-nowrap border border-primary/10"
+  >
+    <Phone size={13} className="fill-white/20" /> 
+    <span>+43 660 147 03 16</span>
+  </a>
+
+</div>
+</header>
+</div>
+);
 });
 
 // --- Layout Component ---
@@ -194,7 +194,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               </p>
               <div className="rounded-2xl overflow-hidden shadow-lg h-48 border border-white/10 grayscale hover:grayscale-0 transition-all duration-500">
                 <iframe 
-                  src="https://maps.google.com/maps?q=Herthergasse+37+17,+1120+Wien,+Austria&output=embed&hl=de" 
+                  src="https://maps.google.com/maps?q=Herthergasse+37+15,+1120+Wien,+Austria&output=embed&hl=de" 
                   width="100%" height="100%" className="border-0" allowFullScreen loading="lazy" 
                   title="Standort von Simba Facility Management in Wien"
                 />
@@ -203,7 +203,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
             <div className="footer-col">
               <h3 className="text-sm font-bold mb-4 text-white uppercase tracking-wider">Kontakt</h3>
               <div className="space-y-4 opacity-80 font-medium mb-8">
-                <p className="flex items-center gap-3"><MapPin size={18} /> Herthergasse 37/17/1, 1120 Wien</p>
+                <p className="flex items-center gap-3"><MapPin size={18} /> Herthergasse 37/15/1, 1120 Wien</p>
                 <p className="flex items-center gap-3"><Phone size={18} /> <a href="tel:06601470316" className="hover:text-white transition-colors">0660 / 1470316</a></p>
                 <p className="flex items-center gap-3"><Mail size={18} /> <a href="mailto:simbafacility@outlook.com" className="hover:text-white transition-colors">simbafacility@outlook.com</a></p>
                 <div className="flex items-start gap-3 pt-2 border-t border-white/10 mt-2">
