@@ -1,0 +1,1 @@
+This folder is dedicated to your branch images. You can upload and replace images directly in this directory.
