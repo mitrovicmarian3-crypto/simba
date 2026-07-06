@@ -171,14 +171,11 @@ export const HomeClient = () => {
                 className="relative w-full aspect-[800/1200] max-h-[500px] xl:max-h-[580px] ml-auto overflow-hidden"
                 style={{ clipPath: 'polygon(12% 0, 100% 0, 100% 100%, 0% 100%)' }}
               >
-                <Image
-                  src="/images/hero/header.webp"
-                  alt="Simba Facility Management Team"
-                  fill
-                  className="object-cover object-[center_8%]"
-                  referrerPolicy="no-referrer"
-                  priority
-                />
+                <img
+                src="/images/hero/header.webp"
+                alt="Simba Facility Management – Gebäudereinigung in Wien"
+                className="absolute inset-0 h-full w-full object-cover object-[center_8%]"
+               />
               </motion.div>
             </div>
 
