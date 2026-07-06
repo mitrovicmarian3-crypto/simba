@@ -91,7 +91,7 @@ export const ALL_BLOG_POSTS: BlogPost[] = [
     subtitle: "Warum Hygienestrukturen entscheidend sind, Kreuzkontaminationen verhindern und für maximale Sauberkeit im Gewerbe sorgen.",
     date: "12. Mai 2025",
     readingTime: "6 Min Lesezeit",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
     content: {
       intro: "In der professionellen Gebäudereinigung ist Sauberkeit nicht nur eine Frage der Optik, sondern vor allem der Hygiene und Gesundheit. Um eine Übertragung von Keimen und Bakterien von einem Bereich auf den anderen (sogenannte Kreuzkontaminationen) absolut sicher zu verhindern, setzen etablierte Wiener Meisterbetriebe auf das standardisierte 4-Farben-System.",
       sections: [
