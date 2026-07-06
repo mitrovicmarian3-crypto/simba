@@ -3,6 +3,22 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
+
+  async redirects() {
+    return [
+      {
+        source: '/hausbetreuung',
+        destination: '/hausbetreuung-wien',
+        permanent: true,
+      },
+      {
+        source: '/hausbetreuung/',
+        destination: '/hausbetreuung-wien',
+        permanent: true,
+      },
+    ];
+  },
+
   images: {
     remotePatterns: [
       {
@@ -14,12 +30,6 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'simbafm.at',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
         port: '',
         pathname: '/**',
       },
