@@ -299,7 +299,7 @@ export const HomeClient = () => {
             <div className="md:col-span-4 relative h-[380px] md:h-[450px] lg:h-[480px] w-full rounded-none overflow-hidden shadow-sm border border-slate-100 flex items-center justify-center bg-white p-2">
               <div className="relative w-full h-full">
                 <Image 
-                  src="/images/ueber-uns/jasmina_marinkovic_kosmo.webp" 
+                  src="/images/ueber-uns/jasmina-marinkovic-kosmo.webp" 
                   alt="Jasmina Marinkovic - Geschäftsführerin Simba Facility Management" 
                   fill
                   sizes="(max-width: 1024px) 100vw, 400px"
