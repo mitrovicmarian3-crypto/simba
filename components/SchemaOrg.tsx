@@ -11,7 +11,7 @@ export default function SchemaOrg() {
     "telephone": "+436601470316",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Herthergasse 37/17/1",
+      "streetAddress": "Herthergasse 37/15/1",
       "addressLocality": "Wien",
       "postalCode": "1120",
       "addressCountry": "AT"
