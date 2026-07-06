@@ -204,7 +204,7 @@ export const UeberUnsClient = () => {
             {/* Right Column: Image aligning perfectly with the text height */}
             <div className="lg:col-span-5 relative w-full min-h-[300px] sm:min-h-[400px] lg:h-auto rounded-[30px] overflow-hidden border border-slate-200/50 shadow-[0_15px_50px_rgba(0,0,0,0.02)] bg-white">
               <Image 
-                src="/images/ueber-uns/jasmina_marinkovic_kosmo.webp" 
+                src="/images/ueber-uns/jasmina-marinkovic-kosmo.webp" 
                 alt="Jasmina Marinkovic" 
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
