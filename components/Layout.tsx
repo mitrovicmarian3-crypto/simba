@@ -72,7 +72,7 @@ const Navigation = React.memo(() => {
 
         {/* Navigation Section */}
         <nav className="hidden lg:flex items-center justify-center gap-3 xl:gap-5 flex-1 px-3">
-          {['Home', 'Über uns', 'Leistungen', 'Blog', 'Karriere', 'Kontakt'].map((item) => (
+          {['Home', 'Über uns', 'Leistungen', 'Blog', 'Kontakt'].map((item) => (
             item === 'Leistungen' ? (
               <div 
                 key={item}
@@ -115,7 +115,6 @@ const Navigation = React.memo(() => {
                 href={
                   item === 'Home' ? '/' : 
                   item === 'Über uns' ? '/ueber-uns' : 
-                  item === 'Karriere' ? '/karriere' :
                   item === 'Kontakt' ? '/kontakt' :
                   item === 'Blog' ? '/blog' :
                   `/#${item.toLowerCase().replace(' ', '-')}`
@@ -272,7 +271,6 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               <h3 className="text-sm font-bold mb-4 text-white uppercase tracking-wider">Informationen</h3>
               <ul className="space-y-4 opacity-80 font-medium mb-8">
                 <li><Link href="/blog" className="hover:opacity-100 transition-all flex items-center gap-3"><FileText size={18} /> Blog</Link></li>
-                <li><Link href="/karriere" className="hover:opacity-100 transition-all flex items-center gap-3"><Users size={18} /> Karriere</Link></li>
                 <li><Link href="/kontakt" className="hover:opacity-100 transition-all flex items-center gap-3"><Mail size={18} /> Kontakt</Link></li>
                 <li><Link href="/agb" className="hover:opacity-100 transition-all flex items-center gap-3"><FileText size={18} /> AGB</Link></li>
                 <li><Link href="/impressum" className="hover:opacity-100 transition-all flex items-center gap-3"><Info size={18} /> Impressum</Link></li>
