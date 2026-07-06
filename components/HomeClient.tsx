@@ -845,7 +845,7 @@ export const HomeClient = () => {
                   <div className="w-10 h-10 bg-slate-100/50 rounded-lg flex items-center justify-center text-[#003067] text-lg font-bold group-hover:bg-[#003067] group-hover:text-white transition-all duration-300">
                     <MapPin size={18} />
                   </div>
-                  <span className="text-base md:text-lg font-bold text-[#003067]">Herthergasse 37/17/1, 1120 Wien</span>
+                  <span className="text-base md:text-lg font-bold text-[#003067]">Herthergasse 37/15/1, 1120 Wien</span>
                 </div>
 
                 {/* Phone Line info */}
