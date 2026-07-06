@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 import { SERVICES_DATA } from '../constants/services';
-import { posts } from './blog/posts';
+import { ALL_BLOG_POSTS } from './blog/posts';
 
 const BASE_URL = 'https://simbafm.at';
 
@@ -65,7 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  const blogRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
+  const blogRoutes: MetadataRoute.Sitemap = ALL_BLOG_POSTS.map((post) => ({
     url: `${BASE_URL}/blog/${post.id}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
