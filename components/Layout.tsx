@@ -205,13 +205,11 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               <div className="space-y-4 opacity-80 font-medium mb-8">
                 <p className="flex items-center gap-3"><MapPin size={18} /> Herthergasse 37/15/1, 1120 Wien</p>
                 <p className="flex items-center gap-3"><Phone size={18} /> <a href="tel:06601470316" className="hover:text-white transition-colors">0660 / 1470316</a></p>
-                <p className="flex items-center gap-3"><Mail size={18} /> <a href="mailto:simbafacility@outlook.com" className="hover:text-white transition-colors">simbafacility@outlook.com</a></p>
-                <div className="flex items-start gap-3 pt-2 border-t border-white/10 mt-2">
-                  <Clock size={16} className="mt-0.5 shrink-0" />
-                  <div>
-                    <p className="font-bold text-white mb-0.5 text-xs">Öffnungszeiten</p>
-                    <p className="text-[11px] leading-snug">Mo-Fr 08-18 Uhr, Sa 08-12 Uhr</p>
-                  </div>
+                <p className="flex items-center gap-3"><Mail size={18} /> <a href="mailto:office@simbafm.at" className="hover:text-white transition-colors">office@simbafm.at</a></p>
+                <p className="flex items-center gap-3">
+                  <Clock size={18} className="shrink-0" />
+                   <span>Mo-Fr 08-18 Uhr, Sa 08-12 Uhr</span>
+                </p>
                 </div>
               </div>
 
